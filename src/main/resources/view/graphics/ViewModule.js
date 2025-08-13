@@ -767,8 +767,8 @@ export class ViewModule {
         gameZone.y += (GAME_ZONE_RECT.h - gameHeight) / 2;
         this.gameZone = gameZone;
         container.addChild(background);
-        container.addChild(gameZone);
         container.addChild(this.hud);
+        container.addChild(gameZone);
         container.addChild(messageLayer);
         container.addChild(tooltipLayer);
         background.interactiveChildren = false;
