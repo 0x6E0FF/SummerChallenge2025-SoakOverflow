@@ -8,7 +8,7 @@ import com.google.common.base.Objects;
 
 public class Player extends AbstractMultiplayerPlayer {
 
-    List<Agent> agents;
+    public List<Agent> agents;
     int points;
 
     public Player() {

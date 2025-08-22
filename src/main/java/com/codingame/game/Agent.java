@@ -10,7 +10,7 @@ import com.codingame.game.grid.Coord;
 import com.codingame.game.grid.Positionable;
 
 public class Agent implements Positionable, Comparable<Agent> {
-    int maxCooldown;
+    public int maxCooldown;
     int soakingPower;
     int optimalRange;
     int balloons;
@@ -23,9 +23,9 @@ public class Agent implements Positionable, Comparable<Agent> {
     private Action combatAction;
     private String message;
 
-    Player owner;
+    public Player owner;
 
-    int id;
+    public int id;
     int movementInterruptedAt;
     AgentClass agentClass;
     List<Coord> intendedPath;
@@ -146,6 +146,10 @@ public class Agent implements Positionable, Comparable<Agent> {
 
     public void setPosition(Coord position) {
         this.position = position;
+    }
+    
+    public void setOwner(Player p) {
+        this.owner = p;
     }
 
     public void setCombatAction(Action combatAction) {
