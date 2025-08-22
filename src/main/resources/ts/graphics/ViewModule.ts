@@ -964,8 +964,8 @@ export class ViewModule {
     this.gameZone = gameZone
 
     container.addChild(background)
-    container.addChild(gameZone)
     container.addChild(this.hud)
+    container.addChild(gameZone)
     container.addChild(messageLayer)
     container.addChild(tooltipLayer)
 
